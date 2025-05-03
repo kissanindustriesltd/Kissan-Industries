@@ -1,3 +1,12 @@
+/* 
+
+color use:
+     green : #3e5c14
+     brown : #8b3408
+     yellow : #b17930
+
+*/
+
 * {
      margin: 0;
      padding: 0;
@@ -6,15 +15,13 @@
 
 body {
      font-family: 'poppins';
-     background-color: #fffef5;
-     color: #333;
+     background-color: #fff;
+     color: #8b3408;
      scroll-behavior: smooth;
 }
 
-.header-container {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
+a{
+     text-decoration: none;
 }
 
 .container {
@@ -57,21 +64,27 @@ body {
      }
 }
 
+.header-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
 header {
-     background: #f9d46a;
+     background-color: #b17930;
      padding: 15px 0;
      position: sticky;
      top: 0;
      z-index: 1000;
 }
 
-.logo-img img{
+.logo-img img {
      max-width: 100px;
      width: 100%;
      position: absolute;
      top: 0;
-     border-radius: 0 0  50% 50%;
-     background-color: #f9d46a;
+     border-radius: 0 0 50% 50%;
+     background-color: #b17930;
      padding: 10px;
 }
 
@@ -87,14 +100,13 @@ nav ul {
 
 nav a {
      text-decoration: none;
-     color: #333;
-     font-weight: bold;
+     color: #fff;
 }
 
 .menu-toggle {
      font-size: 26px;
      cursor: pointer;
-     color: #552800;
+     color: #8b3408;
      display: none;
 }
 
@@ -115,23 +127,24 @@ nav a {
      font-family: 'cooper';
      font-size: 38px;
      padding-bottom: 50px;
+     color: #8b3408;
 }
 
 .main-first-silder,
 .main-second-silder,
 .main-third-silder {
-     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://img.freepik.com/free-photo/taking-peanuts-from-stock-grocery-high-quality-photo_114579-12254.jpg?t=st=1746192710~exp=1746196310~hmac=f42e63acbfed34a2ff539f19ca3bc4b07b31e8863e2a023c9ab3753e5099021c&w=826');
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/slide-1.jpg');
      background-repeat: no-repeat;
      background-size: cover;
      height: 100vh;
 }
 
 .main-second-silder {
-     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://img.freepik.com/free-photo/close-up-view-oil-bottle-standing-buckwheat-middle-raw-italian-pastas-lined-circle-frame-gray-background_140725-130961.jpg?t=st=1746192731~exp=1746196331~hmac=24657f6e1a0ed12bd99b681f5763975c87de1c9704c3f0cddd54b3256bc5adff&w=826');
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/slide-2.jpg');
 }
 
 .main-third-silder {
-     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://img.freepik.com/free-photo/seller-taking-peanuts-shells-market-high-quality-photo_114579-12009.jpg?t=st=1746192994~exp=1746196594~hmac=bb9b84ba3f3bd2a968d90a44cdb741e7a2b8105c3e085bac68c9bfd485fb1fa8&w=826');
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/slide-3.jpg');
 }
 
 .slider-content {
@@ -144,20 +157,20 @@ nav a {
      margin: 0 auto;
 }
 
-.slider-content-title {
+.slider-content-title h2 {
      font-family: 'cooper';
      font-size: 35px;
      color: #fff;
      text-align: center;
-}
-
-.slider-content-title h2 {
      padding-bottom: 20px;
 }
 
 .slider-content-title p {
      font-family: 'poppins';
      font-size: 18px;
+     color: #fff;
+     max-width: 600px;
+     text-align: center;
 }
 
 .main-slider {
@@ -182,7 +195,7 @@ nav a {
 }
 
 .main-slider .slick-dots li.slick-active button {
-     background-color: #552800;
+     background-color: #8b3408;
 }
 
 .main-slider .slick-dots li button {
@@ -198,9 +211,26 @@ nav a {
      border: 2px solid #fff;
 }
 
+.about-sec {
+     background-color: #b17930;
+}
+
+.about-sec .sec-title {
+     color: #fff;
+}
+
 .about-desc p {
+     color: #fff;
      font-weight: 500;
      font-size: 18px;
+}
+
+.process-sec {
+     background-color: #b17930;
+}
+
+.process-sec .sec-title {
+     color: #fff;
 }
 
 .process-sec .process-main-desc {
@@ -208,6 +238,7 @@ nav a {
      width: 100%;
      margin: 0 auto;
      font-size: 18px;
+     color: #fff;
 }
 
 .grid {
@@ -219,7 +250,8 @@ nav a {
 }
 
 .card {
-     background: #fff8cc;
+     background-color: #fff;
+     color: #8b3408;
      padding: 20px;
      border-radius: 10px;
      width: calc(33.33% - 20px);
@@ -252,8 +284,8 @@ nav a {
 
 
 .card:hover {
-     background: #ffe888;
-     transform: scale(1.05);
+     background-color: #a3681c;
+     color: #fff;
 }
 
 form {
@@ -272,7 +304,7 @@ form textarea {
 }
 
 form button {
-     background: #f0b429;
+     background-color: #b17930;
      color: white;
      border: none;
      padding: 12px;
@@ -282,18 +314,24 @@ form button {
 }
 
 form button:hover {
-     background: #d99c14;
+     background-color: #8b3408;
      transform: translateY(-3px);
 }
 
+
+.contact-sec-detail a{
+     color: #b17930;
+}
+
 .custom-footer {
-     background-color: #f9d46a;
+     background-color: #b17930;
      padding: 40px 20px 20px;
-     color: #552800;
+     color: #fff;
      font-size: 16px;
      line-height: 1.6;
 }
-.footer-logo-img img{
+
+.footer-logo-img img {
      max-width: 150px;
      width: 100%;
      margin: 0 auto;
@@ -313,6 +351,10 @@ form button:hover {
      min-width: 220px;
 }
 
+.footer-col a{
+     color: #fff;
+}
+
 .footer-col h3,
 .footer-col h4 {
      margin-bottom: 15px;
@@ -328,14 +370,14 @@ form button:hover {
      margin-bottom: 10px;
 }
 
-.footer-col ul li a {
+.footer-col ul li a{
      text-decoration: none;
-     color: #552800;
-     transition: color 0.3s ease;
+     color: #fff;
+     transition: 0.3s;
 }
 
 .footer-col ul li a:hover {
-     color: #b87100;
+     color: #8b3408;
 }
 
 .social-icons {
@@ -355,7 +397,7 @@ form button:hover {
 .footer-bottom {
      text-align: center;
      margin-top: 30px;
-     border-top: 1px solid #e3ba3c;
+     border-top: 1px solid #fff;
      padding-top: 15px;
      font-size: 14px;
 }
@@ -395,7 +437,7 @@ form button:hover {
      nav ul {
           flex-direction: column;
           display: none;
-          background: #f9d46a;
+          background-color: #b17930;
           width: 100%;
           margin-top: 10px;
           padding: 0;
@@ -421,20 +463,8 @@ form button:hover {
 
 /* our product css */
 
-/* Global Styles */
-* {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-}
-
-body {
-     font-family: Arial, sans-serif;
-}
-
 #our-products {
      padding: 50px 0;
-     background-color: #f9f9f9;
 }
 
 .container {
@@ -445,7 +475,7 @@ body {
 h2 {
      text-align: center;
      font-size: 36px;
-     color: #333;
+     color: #8b3408;
 }
 
 /* Product Cards */
@@ -458,6 +488,7 @@ h2 {
      overflow: hidden;
      flex-wrap: wrap;
 }
+
 .product-image {
      width: 30%;
      background-color: #e6e6e6;
@@ -466,7 +497,7 @@ h2 {
 
 .product-image img {
      width: 100%;
-     height: auto;
+     height: 100%;
      object-fit: cover;
 }
 
@@ -476,23 +507,24 @@ h2 {
      display: flex;
      flex-direction: column;
      justify-content: space-between;
+     background-color: #b17930;
 }
 
 .product-details h3 {
      font-size: 24px;
      margin-bottom: 15px;
-     color: #333;
+     color: #fff;
 }
 
 .product-details .description {
      font-size: 16px;
      margin-bottom: 10px;
-     color: #555;
+     color: #fff;
 }
 
 .product-details p {
      font-size: 16px;
-     color: #333;
+     color: #fff;
 }
 
 .product-details p strong {
@@ -501,9 +533,6 @@ h2 {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-     .container {
-          width: 95%;
-     }
 
      h2 {
           font-size: 30px;
